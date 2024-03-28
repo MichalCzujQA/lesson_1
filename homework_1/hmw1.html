@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    hr {
+        /*подчеркиваем титул h1*/
+        width: 70px;
+        border: 1px solid #007bff;
+        border-bottom: 0;
+    }
+
+    section {
+        /*для все секций"*/
+        padding: 120px 0;
+    }
+
+    .section-header {
+        /* для заголовка секции*/
+        margin-bottom: 75px;
+    }
+
+    .section-header h2 {
+        /*style  h2 in section*/
+        color: #333;
+        font-size: 1.9em;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 400;
+        background-image: url(../homework_1/360_F_292887204_2wH041phSQo70eqaE9GRqFvn5MmQ4B8w.jpg);
+        background-size: 19;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        /*чтобы весь текс стоял по сердине */
+        display: flex;
+
+        justify-content: center;
+    }
+
+    .btn {
+        /*доадем выгляд нажиманию*/
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #333;
+        border: 1px solid #007bff;
+        padding: 14px 20px;
+        transition: all .3s;
+        display: inline-block;
+        margin: auto;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        /*когда наводим курсорем*/
+        color: #fff;
+        background-color: #007bff;
+    }
+
+    .container {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    /* Header styles */
+
+    .main-header {
+        /*додаем фотографию*/
+
+        height: 70vh;
+        background-image: url(../homework_1/360_F_292887204_2wH041phSQo70eqaE9GRqFvn5MmQ4B8w.jpg);
+        background-size: 19;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        /*чтобы весь текс стоял по сердине */
+        display: flex;
+
+        justify-content: center;
+    }
+
+    .main-header .main-header-content {
+        text-align: center;
+    }
+
+    .main-header .main-header-content h1 {
+        /*Делам стиль H1 титул*/
+        font-size: 4.2em;
+        color: #007bff;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .main-header .main-header-content p {
+        /*додаем стиль параграфу*/
+        color: #333;
+        font-size: 1.3em;
+        margin: 40px 0;
+    }
+
+    .main-header .main-header-content p span {
+        /*меняем цвет точек */
+        color: #007bff;
+    }
+
+    /*Main menu style*/
+
+    .menu-nav {
+        background-color: #007bff;
+    }
+
+    /* чтобы было меню навигации когда фотка меньше */
+
+    #drop-nav {
+        display: none;
+    }
+
+    label[for="drop-nav"] {
+        display: none;
+    }
+
+    .menu-nav ul {
+        /*забераем пробели*/
+        margin: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .menu-nav ul .menu-item {
+        /*Стилизация елементов "li"*/
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .menu-nav ul .menu-item a {
+        /*Стилизация елементов "a"*/
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 14px 20px;
+        display: block;
+        transition: all .3s;
+    }
+
+    .menu-nav ul .menu-item a:hover {
+        /*btn додаем выгляд конпкам*/
+        color: #007bff;
+        background-color: #fff;
+    }
+
+    .about {
+        text-align: center;
+    }
+
+    .about .about-img {
+        /* Додаємо стилі для зменшення розміру фотографії */
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+
+    .about p {
+        /* корегируем параграф в абаут */
+        max-width: 700px;
+        margin: 40px auto 30px auto;
+        color: #777;
+        line-height: 1.4;
+    }
+
+    .contact form {
+        /*выгляд контактам */
+        max-width: 700px;
+        margin: 40px auto 30px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .contact input[type="text"],
+    .contact input[type="email"] {
+        flex-basis: 48%;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .contact textarea {
+        flex-basis: 100%;
+        padding: 15px;
+        margin-bottom: 15px;
+        height: 100px;
+    }
+
+    .social-links {
+        margin-top: 75px;
+        text-align: center;
+    }
+
+    .social-links .social-link {
+        font-size: 2.5em;
+        color: #007bff;
+        transition: all .3s;
+    }
+
+    .social-links .social-link:hover {
+        color: #777;
+    }
+
+    /* Main footer style */
+
+    .main-footer {
+        background-color: #f2f1ed;
+        padding: 30px;
+        text-align: center;
+        color: #777;
+    }
+
+    .main-footer {
+        background-color: #f2f1ed;
+        padding: 30px;
+        text-align: center;
+        color: #777;
+    }
+</style>
+
+
+
+
+
+<body>
+
+    <header class="main-header">
+        <div class="main-header-content">
+            <h1>Front End Developer</h1>
+            <!--Чтобы подчеркнуть титул -->
+            <hr>
+            <p>HTML <span>•</span> CSS <span>•</span> JavaScript</p>
+            <!--btn додает выгляд-->
+            <a href="" class="btn">View more</a>
+        </div>
+    </header>
+
+    <nav class="menu-nav">
+        <!-- чтобы была меню навигации когда фоторграфия меньше -->
+        <label for="drop-nav">Menu</label>
+        <input type="checkbox" id="drop-nav">
+
+        <ul>
+            <li class="menu-item"><a href="#about">About me</a></li>
+            <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="menu-item"><a href="#contact">Conatac</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="about">
+        <div class="container">
+            <header class="section-header">
+                <h2>About Me</h2>
+                <hr>
+            </header>
+
+            <img src="IMG_2218-2.jpg" alt="Michal Czuj" class="about-img">
+            <p>Меня Зовуд Михаил Чуй, Я Фронтенд-разработник: создание пользователького интерфейса веб-приложений с
+                помощью языков программирования, таких как HTML, CSS и JavaScript
+            опит работы примерно 2 года.Если есть вопросы, просто сконтактируйтесь со мной!</p>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <header class="section-header">
+                <h2>Kontakt</h2>
+                <hr>
+            </header>
+
+            <form action="">
+                <input type="text" placeholder="Imie" name="name">
+                <input type="text" placeholder="E-mail" name="email">
+                <textarea placeholder="Wiadomosc" name="message"></textarea>
+                <input type="submit" class="btn">
+            </form>
+
+            <div class="social-links">
+                <a href="" class="social-link"><i class="fab fa-facebook-square"></i></a>
+                <a href="" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <footer class="main-footer">
+        <div class="container">
+            <p> &copy; 2024 My Portfolio</p>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
